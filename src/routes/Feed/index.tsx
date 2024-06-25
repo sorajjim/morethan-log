@@ -11,7 +11,6 @@ import ServiceCard from "./ServiceCard"
 import ContactCard from "./ContactCard"
 import PostList from "./PostList"
 import PinnedPosts from "./PostList/PinnedPosts"
-import { Pagination } from "@mui/material"
 
 const HEADER_HEIGHT = 73
 
@@ -39,7 +38,6 @@ const Feed: React.FC<Props> = () => {
         </div>
         <FeedHeader />
         <PostList q={q} />
-        <Pagination count={10} />
         <div className="footer">
           <Footer />
         </div>
